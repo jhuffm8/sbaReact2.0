@@ -4,19 +4,19 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export function NavBar(){
     return (
-      <div className="navbar">
-        <ul>
-            <li>
-                <Link to='/'>Home</Link>
-            </li>
-            <li>
-                <Link to='/cart'>
-                    <ShoppingCartIcon />
-                </Link>
-            </li>
-        </ul>
-
-
+        <div>
+        <div className="navbar">
+            <ul>
+                <li>
+                    <Link to='/'>Home</Link>
+                </li>
+                <li>
+                    <Link to='/cart'>
+                        <ShoppingCartIcon />
+                    </Link>
+                </li>
+            </ul>
+        </div>
       </div>
     )
 }
