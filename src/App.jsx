@@ -15,10 +15,10 @@ function App() {
     <NavBar />
     <Routes>
       <Route path='/' element={ <Home />} />
-      <Route path='/cart' element={ <Cart />} />
       <Route path='/tops'element={<Tops />} />
       <Route path='/success'element={<Success />} />
       <Route path='/cancel'element={<Cancel />} />
+      <Route path='/cart' element={<Cart />} />
     </Routes>
     
     </>
