@@ -2,7 +2,7 @@
 
 export function Success(){
     return (
-        <h1>Your Payment was Successful!</h1>
+        <h1 style={{color: 'black'}}>Your Payment was Successful!</h1>
 
     )
 }
