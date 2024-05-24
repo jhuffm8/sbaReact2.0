@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import '../styles/cart.css'
+
 const BASE_URL = `http://localhost:8080/checkout`
 
 export function Cart(){
@@ -21,22 +22,16 @@ export function Cart(){
         try {
           const res = await fetch(BASE_URL, {
             method: 'POST',
-            // body: JSON.stringify({
-            //   items: [
-            //     { id: 1, quantity: 5},
-            //     { id: 2, quantity: 1}
-            //   ]
-            // }),
             headers: {
               'Content-Type': 'application/json'
             }
           })
-          if(res.ok) return  res.json()
+          const body = await res.json()
+          window.location.href = body.url
           
         } catch (error) {
           console.log("From client",error)
         }
-        alert('Payment Submitted!')
     }
     return(
         <div className="checkout-form">
