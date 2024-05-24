@@ -9,9 +9,6 @@ export function Cart(){
         city: '',
         state: '',
         zip: '',
-        cardNumber: '',
-        expirationDate: '',
-        cvv: '',
     });
 
     const handleChange = (e) => {
@@ -65,20 +62,6 @@ export function Cart(){
           <label>
             ZIP Code:
             <input type="text" name="zip" value={formData.zip} onChange={handleChange} required />
-          </label>
-  
-          <h3>Payment Information</h3>
-          <label>
-            Card Number:
-            <input type="text" name="cardNumber" value={formData.cardNumber} onChange={handleChange} required />
-          </label>
-          <label>
-            Expiration Date:
-            <input type="text" name="expirationDate" value={formData.expirationDate} onChange={handleChange} required />
-          </label>
-          <label>
-            CVV:
-            <input type="text" name="cvv" value={formData.cvv} onChange={handleChange} required />
           </label>
   
           <button type="submit" onClick={handleSubmit}>Purchase</button>
